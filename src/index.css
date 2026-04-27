@@ -1,0 +1,125 @@
+:root {
+  --text: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  font: 18px/145% var(--text);
+  letter-spacing: 0.18px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*root styling */
+body {
+  margin: 0;
+}
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5%;
+}
+/*text styling */
+h1,
+h2 {
+  font-family: var(--text);
+  font-weight: 500;
+  color: #000;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 100%;
+  margin: 0 0 30px 0;
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: 0px;
+  margin: 0 0 10px 0;
+}
+p {
+  margin: 0;
+}
+ @media screen and (max-width: 1024px) {
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+    font-size: 20px;
+  }
+  }
+  @media screen and (max-width: 500px) {
+  p, .add-new-task label  {
+  font-size: 16px;
+    }
+  }
+ 
+ /* app styling - new task */
+.new-task {
+  padding: 30px 0 0 0;
+  border-top: 2px solid #e5f5fa;
+}
+form.add-new-task {
+  display: flex !important;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 5%;
+}
+.add-new-task label {
+display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+ .add-new-task button {
+    background-color: #e5f5fa;
+    border: 2px solid #37616e;
+    padding: 5px 15px 3px 15px;
+    cursor: pointer;
+  }
+  .add-new-task input, .add-new-task select, .filter select {
+    background-color: #fff;
+    border: 2px solid #37616e;
+    padding: 5px 15px 3px 15px;
+  }
+
+
+/* app styling - my task */
+.my-tasks {
+  padding: 40px 0 0 0;
+}
+.filter { 
+  padding: 0 0 10px 0;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.filter p {
+  padding-right: 10px;
+}
+.title-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 5%;
+  padding: 10px;
+  background-color: #e5f5fa;
+}
+.list-item-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 5%;
+  padding: 0 0 10px 0;
+}
+
+/*filter buttons*/
+.filter button {
+  margin-right: 10px;
+    background-color: #e5f5fa;
+    border: 1px solid #37616e;
+    padding: 3px 10px 1px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.filter-btn[aria-pressed="true"] {
+    background-color: #37616e;
+    color: white;
+    transition: 0.3s;
+}
