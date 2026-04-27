@@ -19,13 +19,16 @@ The app will:
 
 Project Structure:
 src/
-  App.jsx
-  App.test.jsx
-  index.css
-  components/
-    AddTask.jsx
-    TaskList.jsx
-    Filter.jsx
+ - App.jsx
+ - App.test.jsx
+ - Filters.test.jsx
+ - EmptyList.test.jsx
+ - index.css
+
+     components/
+    - AddTask.jsx
+    - TaskList.jsx
+    - Filter.jsx
 
 Components:
 AddTask handles form input and submission of new tasks
