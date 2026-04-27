@@ -28,7 +28,7 @@ function handleChange(e) {
 		<form className="add-new-task" onSubmit={handleSubmit}>
           <label htmlFor="inputNewTask">
           Task Name
-            <input type="text" id="inputNewTask" value={name} onChange={handleChange} ref={taskNameRef} />
+            <input type="text" id="inputNewTask" required value={name} onChange={handleChange} ref={taskNameRef} />
           </label>
           <label htmlFor="catSelect">
           Task Category

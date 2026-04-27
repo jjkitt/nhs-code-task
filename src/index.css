@@ -123,3 +123,6 @@ display: flex;
     color: white;
     transition: 0.3s;
 }
+.emptyList {
+  padding: 10px;
+}

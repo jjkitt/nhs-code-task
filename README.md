@@ -47,22 +47,28 @@ Category Persistence:
 UX Enhancements:
 - Input field is automatically refocused after adding a task
 - Submitting first task without selecting a category is prevented
+- Submitting an empty task is prevented
 
 ---------------------------------------------------------------------------------
 
 Testing
-The project includes a test (App.test.jsx) that verifies adding a task updates the task list.
+1. The project includes a test (App.test.jsx) that verifies adding a task updates the task list.
 
-The test:
+The App.test.jsx test:
 - Renders the application
 - Simulates user input (task name and category)
 - Simulates clicking the "Add" button
 - Verifies that the new task appears in the UI
 
-This ensures that:
-- Form inputs update state correctly
-- Task creation logic works
-- The UI renders as expected
+2. Filters.test.jsx tests if tasks are being filtered by category when filter buttons clicked
+
+The Filters.test.jsx test:
+- Renders the application
+- Simulates adding a work task and home task
+- Simulates clicking the 'Work' filter button
+- checks that only the work task is displayed
+
+3.Emptylist.test.jsx - verifies that when there are no tasks added to the list, a message is displayed prompting the user to add a new task.
 
 ---------------------------------------------------------------------------------
 

@@ -77,9 +77,16 @@ const filterList = FILTER_NAMES.map((name) => (
           <p>Status</p>
         </div>
         <div className="current-tasks">
+
+          {tasks.length === 0 ? (
+          <p className="emptyList">No tasks yet. Add new tasks above.</p>
+          ) : (
           <ul role="list">
            {taskList}
         </ul>
+          )}
+
+          
         </div>
       </div>
     </div>
